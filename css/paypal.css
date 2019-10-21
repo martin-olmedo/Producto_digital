@@ -1,0 +1,12 @@
+body{
+    background-color: var(--negro-color);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*vh es viewport height, significa que va a tomar el tamaño de la pantalla*/
+}
+.content_paypal a {
+    color: var(--aguamarina-color);
+}
