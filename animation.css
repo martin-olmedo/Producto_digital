@@ -1,0 +1,58 @@
+.fadeIn{/*acá definimos la clase donde le pongo los detalles a la animación. ALGUNOS NAVEGADORES NECESITAN EL WEBKIT, OTROS NO.*/
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /*esto define que se va a cumplir los gif frames de ida y regreso*/
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {/*acá se define qué animación es la que va a tener esta clase*/
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} /*en el html se elige qué objeto tiene esta animación (VER HTML EN EL H1 DONDE DICE DIV CLASS)*/
+
+.fadeInDown{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

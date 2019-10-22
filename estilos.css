@@ -1,0 +1,153 @@
+/* Variables: en esta sección defino variables para css. Esto sirve para que cuando yo quiera modificar por ej el color de las letras o la fuente, lo haga de acá y no tenga que ir recorriendo todo el script */
+:root{/*para que estas variables esten disponibles para todos, uso :root*/
+--aguamarina-color: aquamarine;
+--blanco-color: white;
+--negro-color: #313337;
+/*Tipografía*/
+--normal: 12px;
+/* Espaciado */
+--space: 10px;
+/*BOX SHADOW*/
+--box: 0 0 5px #4a4a4a;
+}
+/*ESTO LO EXTRAIGO DE GOOGLE FONTS en la parte de import de la fuente que quiero*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* Variables */
+/* SI NO TIENEN PUNTO ADELANTE, SIGNIFICA QUE VA A CUMPLIRSE EN TODOS LOS DIV QUE SEAN DE ESTE TIPO. SI TIENEN EL PUNTO ADELANTE, ES PARA UN DIV ESPECIFICO */
+html, body {
+    padding: 0px;
+    margin: 0px;
+    /* esto le saca los márgenes de arriba y del costado */
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif; /*ESTO LO COPIÉ DE GOOGLE FONTS*/
+}
+p, label {
+    font-size: var(--normal);
+}
+footer {
+    display: flex; /* ESTO SIRVE PARA PASAR LOS ELEMENTOS DE VERTICAL A HORIZONTAL (pone la imágen al lado del texto, si no, cuando lo cargo en HTML, quedan uno abajo del otro*/
+    background-color: var(--negro-color);
+    padding: var(--space);
+    color: var(--blanco-color);
+    justify-content: space-between; /*ESTO ES PARA QUE LA IMÁGEN QUEDE BIEN A LA IZQ Y EL TEXTO A LA DERECHA (los separa porque son dos div, uno de img y el otro de ul*/
+    align-items: center; /*cambia la alineación vertical para que esten todos los elementos en el centro (imagen y texto)*/
+}
+.contact a{
+    color: var(--aguamarina-color);  
+}
+nav {
+    display: flex; /* ESTO SIRVE PARA PASAR LOS ELEMENTOS DE VERTICAL A HORIZONTAL (pone la imágen al lado del texto, si no, cuando lo cargo en HTML, quedan uno abajo del otro*/
+    background-color: var(--aguamarina-color);
+    padding: var(--space);
+    color: var(--blanco-color);
+    justify-content: space-between; /*ESTO ES PARA QUE LA IMÁGEN QUEDE BIEN A LA IZQ Y EL TEXTO A LA DERECHA (los separa porque son dos div, uno de img y el otro de ul*/
+    align-items: center; /*cambia la alineación vertical para que esten todos los elementos en el centro (imagen y texto)*/
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    padding-left: var(--space);
+    list-style: none; /*esto es para sacarle el bullet a la lista*/
+}
+nav li a{
+    color: var(--negro-color);
+    text-decoration: none; /*para sacarle el subrayado*/
+}
+nav li a:hover{/*las opciones de un botón*/
+    color: var(--blanco-color);/*con esto, cuando paso el mouse por arriba se pone en blanco el link*/
+} 
+/* ACA EMPIEZA EL MAIN */
+.main_section{
+    padding: var(--space);
+    text-align: center;
+}
+.products{
+    background-image: url("../images/tildeverdeSAP.png");
+    max-height: 100px;
+    background-size: auto; /*esto define el tamaño de la imagen con respecto al background*/
+    background-position: center top; /*esto define la posición de la imágen dentro del background*/
+    padding: 15%;
+    display: flex;
+}
+.product{
+    padding: var(--space);
+    margin-top: -220px;
+}
+.product .content{
+    background-color: var(--blanco-color);
+    padding: 15px;
+    box-shadow: var(--box); /*esto define la sombra de la caja. Recibe valores <x> <y> <tamaño en pixel> <color> donde x e y son las coordenadas para donde se va a marcar la sombra y el tamaño marca cuánta sombra*/
+}
+.img_content{
+    text-align: center;
+}
+.main_button{
+    background-color: var(--aguamarina-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--blanco-color);
+    border: 0px; /*esto define el borde del botón*/
+    cursor: pointer; /*con esto el mouse se transforma a manito cuando le paso por arriba*/
+    border-radius: 2px; /*le da un efecto redondeado*/
+}
+.main_button:hover{
+    background-color: aqua; /*esto es para que cambie de color cuando le paso el mouse por arriba y le da un efecto como de profundidad*/
+}
+.beneficios {
+    padding: 20%;
+    display: flex;
+}
+.beneficio {
+    padding: var(--space);
+}
+.beneficio .content{
+    background-color: var(--blanco-color);
+    padding: 15px;
+    box-shadow: var(--box); /*esto define la sombra de la caja. Recibe valores <x> <y> <tamaño en pixel> <color> donde x e y son las coordenadas para donde se va a marcar la sombra y el tamaño marca cuánta sombra*/
+}
+.img_beneficio{
+    max-width: 900;
+    text-align: center;
+    margin: auto;
+}
+.coments{
+    padding: 20%;
+    display: flex;
+}
+.coment{
+    padding: var(--space);
+}
+.coment .content{
+    background-color: var(--blanco-color);
+    padding: 15px;
+    box-shadow: var(--box); /*esto define la sombra de la caja. Recibe valores <x> <y> <tamaño en pixel> <color> donde x e y son las coordenadas para donde se va a marcar la sombra y el tamaño marca cuánta sombra*/
+}
+.img_coment {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+/*BAJAR NORMALIZE CSS DE INTERNET PARA QUE LA PÁGINA REA RESPONSIVE, ESTO SIGNIFICA QUE CUANDO LO AGRANDO NO SE SUPERPONEN Y MANTIENEN UN ORDEN*/
+/* VENTA */
+.modulo_pago {
+    background-color: var(--blanco-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.modulo_pago_imagen{
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.data {
+    margin-top: 5px;
+    margin-bottom: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--negro-color);
+    box-sizing: border-box;
+}
