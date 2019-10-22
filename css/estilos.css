@@ -33,7 +33,7 @@ footer {
     align-items: center; /*cambia la alineación vertical para que esten todos los elementos en el centro (imagen y texto)*/
 }
 .contact a{
-    color: var(--aguamarina-color);
+    color: var(--aguamarina-color);  
 }
 nav {
     display: flex; /* ESTO SIRVE PARA PASAR LOS ELEMENTOS DE VERTICAL A HORIZONTAL (pone la imágen al lado del texto, si no, cuando lo cargo en HTML, quedan uno abajo del otro*/
@@ -56,23 +56,23 @@ nav li a{
 }
 nav li a:hover{/*las opciones de un botón*/
     color: var(--blanco-color);/*con esto, cuando paso el mouse por arriba se pone en blanco el link*/
-}
+} 
 /* ACA EMPIEZA EL MAIN */
 .main_section{
     padding: var(--space);
     text-align: center;
 }
 .products{
-    background-image: url("../images/fondo.png");
-    max-height: 50px;
-    background-size: contain; /*esto define el tamaño de la imagen con respecto al background*/
+    background-image: url("../images/tildeverdeSAP.png");
+    max-height: 100px;
+    background-size: auto; /*esto define el tamaño de la imagen con respecto al background*/
     background-position: center top; /*esto define la posición de la imágen dentro del background*/
     padding: 15%;
     display: flex;
 }
 .product{
     padding: var(--space);
-    margin-top: -260px;
+    margin-top: -220px;
 }
 .product .content{
     background-color: var(--blanco-color);
@@ -95,38 +95,34 @@ nav li a:hover{/*las opciones de un botón*/
 .main_button:hover{
     background-color: aqua; /*esto es para que cambie de color cuando le paso el mouse por arriba y le da un efecto como de profundidad*/
 }
-.beneficios{
-  background-size: contain; /*esto define el tamaño de la imagen con respecto al background*/
-  padding: 15%;
-  display: flex;
+.beneficios {
+    padding: 20%;
+    display: flex;
 }
-.beneficio{
-  padding: var(--space);
-  margin-top: -120px;
+.beneficio {
+    padding: var(--space);
 }
 .beneficio .content{
-  background-color: var(--blanco-color);
-  padding: 15%;
-  <!--- box-shadow: var(--box); --->
+    background-color: var(--blanco-color);
+    padding: 15px;
+    box-shadow: var(--box); /*esto define la sombra de la caja. Recibe valores <x> <y> <tamaño en pixel> <color> donde x e y son las coordenadas para donde se va a marcar la sombra y el tamaño marca cuánta sombra*/
 }
 .img_beneficio{
-    max-width: 300;
+    max-width: 900;
     text-align: center;
     margin: auto;
 }
 .coments{
-  background-size: contain; /*esto define el tamaño de la imagen con respecto al background*/
-  padding: 15%;
-  display: flex;
+    padding: 20%;
+    display: flex;
 }
 .coment{
-  padding: var(--space);
-  margin-top: -120px;
+    padding: var(--space);
 }
 .coment .content{
-  background-color: var(--blanco-color);
-  padding: 15%;
-  <!--- box-shadow: var(--box); --->
+    background-color: var(--blanco-color);
+    padding: 15px;
+    box-shadow: var(--box); /*esto define la sombra de la caja. Recibe valores <x> <y> <tamaño en pixel> <color> donde x e y son las coordenadas para donde se va a marcar la sombra y el tamaño marca cuánta sombra*/
 }
 .img_coment {
     text-align: center;
