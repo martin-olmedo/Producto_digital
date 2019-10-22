@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>VENTA BRAND!</title>
+    <title>FAQs BRAND!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animation.css">
     <!-- <link rel="stylesheet" href="css/normalize.css">   ESTO LO TENGO QUE DESCARGAR DE INTERNET -->
@@ -27,46 +27,37 @@
         </div>
     </nav>
     <!-- Acá termina el NavBar -->
-    <!-- Acá empieza el formulario venta -->
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Acá empieza el main -->
     <div class="container">
+        <h1>Preguntas frecuentes</h1>
         <div class="row">
-            <div class="col-4">
-                <div class="modulo_pago">
-                    <div class="modulo_pago_imagen">
-                        <img src="images/largavistas.png">
-                    </div>
-                    <h3>Producto 1</h3>
-                    <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos ;)</p>
-                </div>
+            <div class="col-8"> <!-- acá toma el lugar de 8/12 del total -->
+                <h1>Aca va la primer pregunta frecuente?</h1>
+                <p>Si, efectivamente. Ahí va la primer pregunta frecuente y acá va la respuesta.</p>
             </div>
-            <div class="col-8">
-                <div class="modulo_pago">
-                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HFZC7SK2MVAQQ" method="POST"> <!-- ESTA DIRECCIÓN LA SAQUÉ CONFIGURANDO UN BOTON DESDE MI CUENTA DE PAYPAL EN LA PARTE HERRAMIENTAS. USO EL METHOD POST PORQUE LE ESTOY MANDANDO INFORMACIÓN JUNTO CON LA COMPRA QUE QUIERO HACER (nombre mail y tel) SI NO LE CAMBIO EL METHOD, NO FUNCIONA BIEN EL LINK -->
-<!-- SE PUEDE PONER PARA QUE CUANDO EL CLIENTE APRIETA EL BOTÓN, VAYA A LA PAGINA Y HAYA RELLENADO. PARA ESTO, TENGO QUE CAMBIAR EL VALOR DE LAS VARIABLES QUE SE MANDAN PARA QUE COINCIDAN CON LAS DE PAYPAL. VER MÁS EN DEVELOPERS.PAYPAL.COM -->
-                        <label for="name">Nombre</label>
-                        <br>
-                        <input type="text" name="name" id="" placeholder="" class="data">
-                        <label for="email">E-mail</label>
-                        <br>
-                        <input type="text" name="email" id="" placeholder="" class="data">
-                        <label for="phone">Telefono</label>
-                        <br>
-                        <input type="text" name="phone" id="" placeholder="" class="data">
-                        <input type="submit" value="Confirmar pago" class="main_button" name="submit">
-                    </form>
+            <div class="col-4"> <!-- acá toma el lugar de 4/12 del total -->
+                <div class="modulo_faq">
+                    <div class="modulo_faq_imagen">
+                        <img src="images/cara1.jpg" alt="" width="150px">
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-4"> <!-- acá toma el lugar de 4/12 del total -->
+                <div class="modulo_faq">
+                    <div class="modulo_faq_imagen">
+                        <img src="images/cara2.jpg" alt="" width="150px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-8"> <!-- acá toma el lugar de 8/12 del total -->
+                <h1>Entonces, esta es la segunda pregunta frecuente?</h1>
+                <p>Correcto! Como esa es la segunda pregunta, esta es la respuesta a esa pregunta.</p>
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- Acá termina el formulario venta -->
+    <!-- Acá termina el main -->
     <!-- INICIO DE FOOTER -->
     <footer>
         <div class="option contact"> <a href="terminos.html">Terminos y condiciones</a> </div>
