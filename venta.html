@@ -49,14 +49,14 @@
 <!-- SE PUEDE PONER PARA QUE CUANDO EL CLIENTE APRIETA EL BOTÓN, VAYA A LA PAGINA Y HAYA RELLENADO. PARA ESTO, TENGO QUE CAMBIAR EL VALOR DE LAS VARIABLES QUE SE MANDAN PARA QUE COINCIDAN CON LAS DE PAYPAL. VER MÁS EN DEVELOPERS.PAYPAL.COM -->
                         <label for="name">Nombre</label>
                         <br>
-                        <input type="text" name="name" id="nombre" placeholder="" class="data" onkeyup="validateName(this.value)">
+                        <input type="text" name="name" id="" placeholder="" class="data">
                         <label for="email">E-mail</label>
                         <br>
-                        <input type="text" name="email" id="email" placeholder="" class="data" onkeyup="validateEmail(this.value)">
-                        <label for="phone">Telefono (sin espacios ni - Ej 1511111111)</label>
+                        <input type="text" name="email" id="" placeholder="" class="data">
+                        <label for="phone">Telefono</label>
                         <br>
-                        <input type="text" name="phone" id="phone" placeholder="" class="data" onkeyup="validatePhone(this.value)">
-                        <input type="submit" value="Confirmar pago" class="main_button" name="submit" id="boton" disabled>
+                        <input type="text" name="phone" id="" placeholder="" class="data">
+                        <input type="submit" value="Confirmar pago" class="main_button" name="submit">
                     </form>
                 </div>
             </div>
@@ -73,34 +73,7 @@
         <div class="option contact"><a href="mailto:contacto@brand.com">contacto@brand.com</a></div>
     </footer>
     <!-- FIN DE FOOTER -->
-    <script>
-        var validos = 0
-        function validateName(str){
-            if (str.match(/^[a-zA-Z]{2,}\s?[a-zA-Z]{2,}$/i)) {
-                document.getElementById("nombre").style.backgroundColor="blue"
-                validos++
-            }else{
-                document.getElementById("nombre").style.backgroundColor="red"
-            }
-        }
-        function validateEmail(str){
-            if (str.match(/^[\w]{1,30}[\._]?[\w]{1,30}@[\w]{2,30}\.[\w]{1,7}\.?\w?\w?$/i)) {
-                document.getElementById("email").style.backgroundColor="blue"
-                validos++
-            }else{
-                document.getElementById("email").style.backgroundColor="red"
-            }
-        }
-        function validatePhone(str){
-            if (str.match(/^[\d]{6,15}$/i)) {
-                document.getElementById("phone").style.backgroundColor="blue"
-                validos++
-            }else{
-                document.getElementById("phone").style.backgroundColor="red"
-            }
-            if (validos == 3){
-                document.getElementById("boton").disabled = false
-        }
+    <script src="js/script1.js">
     </script>
 </body>
 </html>
